@@ -55,23 +55,32 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px;
     text-align: center;
+    padding-top: 10px;
 }
 
-nav ul {
+.navbar {
     list-style: none;
-    padding: 0;
-}
-
-nav li {
     display: inline;
-    margin-right: 20px;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a {
     text-decoration: none;
+    padding: 11px;
     color: #fff;
+}
+
+nav a:hover{
+    background-color: #868484;
+    color: #333;
+}
+
+nav a.active {
+    background-color: #04AA6D;
+    color: white;
 }
 
 .container {
@@ -133,8 +142,6 @@ main {
     }
 }
 
-
-
 article, section {
     margin: 0;
     padding: 10px;
@@ -150,5 +157,3 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
-
